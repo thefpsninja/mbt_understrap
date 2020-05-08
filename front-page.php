@@ -21,6 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 // Adds Hero widget
 get_template_part('global-templates/hero');
 
+get_template_part('global-templates/usps');
+
+get_template_part('global-templates/portfolio-items');
+
 ?>
 
 

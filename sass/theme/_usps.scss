@@ -1,0 +1,21 @@
+// USPs stylingsheet
+
+#wrapper-usps {
+    text-align: center;
+    
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .col-md-4 {
+        margin-bottom: 1.25rem;
+        display: flex;
+        
+        .usp {
+            background-color: rgb(255, 255, 255);
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+        }
+    }
+
+}
