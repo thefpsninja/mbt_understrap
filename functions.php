@@ -18,7 +18,6 @@ $understrap_includes = array(
 	'/hooks.php',                           // Custom hooks.
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/custom-post-types.php',				// Custom Post types.
-	'/custom-taxonomies.php',				// Custom Taxonomies.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
