@@ -29,6 +29,27 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_content(); ?>
 
+		<?php 
+		// Fetch Client
+		$client = get_field('add_client');
+
+		// Fetch Client Url
+		$client_url = get_field('client_url');
+
+		// If there is no URL print without
+		if( $client && !$client_url): ?>
+			<h2><?php echo esc_html( $client->name ); ?></h2>
+			<p><?php echo esc_html( $client->description ); ?></p>
+		<?php endif; 
+
+		// If there is URL print with
+		if( $client_url && $client ): ?>
+			<h2><?php echo '<a href="' . esc_url( $client_url ) . '">'; ?><?php echo esc_html( $client->name ); ?></a></h2>
+			<p><?php echo esc_html( $client->description ); ?></p>
+		<?php else: ?>
+
+		<?php endif; ?>
+
 		<?php
 		wp_link_pages(
 			array(
